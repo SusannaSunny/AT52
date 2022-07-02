@@ -27,8 +27,7 @@ public class DataGenerator {
     }
 
     private static void sendRequest(RegistrationDto user) {
-        //Gson gson = new Gson();
-        //String userI = gson.toJson(user);
+
 
         given() // "дано"
                 .spec(requestSpec) // указываем, какую спецификацию используем

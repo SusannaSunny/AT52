@@ -30,7 +30,6 @@ public class AuthTest {
     void shouldSuccessfulLoginIfRegisteredActiveUser() {
 
         var registeredUser = getRegisteredUser("active");
-        //DataGenerator.Registration(registeredUser);
 
         formCard.$x(".//span[@data-test-id='login']//input").val(registeredUser.getLogin());
         formCard.$x(".//span[@data-test-id='password']//input").val(registeredUser.getPassword());
